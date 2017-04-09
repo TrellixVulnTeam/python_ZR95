@@ -1,1 +1,8 @@
-print("Hello taha khan")
+x=7
+y=8
+z=x=y=3
+
+print(z)
+
+
+
