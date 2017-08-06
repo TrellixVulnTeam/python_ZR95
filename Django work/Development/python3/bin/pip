@@ -1,0 +1,6 @@
+#!/home/taha/python/Django work/Development/python3/bin/python
+if __name__ == '__main__':
+    import sys
+    import pip
+
+    sys.exit(pip.main())
