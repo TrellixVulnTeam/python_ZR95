@@ -15,8 +15,8 @@ SPIDER_MODULES = ['ourfirstscraper.spiders']
 NEWSPIDER_MODULE = 'ourfirstscraper.spiders'
 
 #Export as CSV Feed
-FEED_FORMAT = "csv"
-FEED_URI = "reddit.csv"
+# FEED_FORMAT = "csv"
+# FEED_URI = "reddit.csv"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'ourfirstscraper (+http://www.yourdomain.com)'
