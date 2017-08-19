@@ -1,0 +1,3 @@
+source activate python3  /// in this folder i have created enviroment with name of python3
+
+source deactivate python3 
