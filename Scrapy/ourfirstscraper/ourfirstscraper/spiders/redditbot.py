@@ -13,15 +13,17 @@ class RedditbotSpider(scrapy.Spider):
         votes = response.css('.score.unvoted::text').extract()
         times = response.css('time::attr(title)').extract()
         comments = response.css('.comments::text').extract()
+        time = response.css('.live-timestamp::text').extract()
 
         # Give the extracted content row wise
-        for item in zip(titles, votes, times, comments):
+        for item in zip(titles, votes, times, comments, time):
             # create a dictionary to store the scraped info
             scraped_info = {
                 'title': item[0],
                 'vote': item[1],
                 'created_at': item[2],
                 'comments': item[3],
+                'time' : item[4]
             }
 
             # yield or give the scraped info to scrapy
